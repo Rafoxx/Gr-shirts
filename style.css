@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+header{
+    background-color: #2f69db;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+header ul li a:hover {
+    color: #a0a0a0;
+}
+
+.conteudo {
+    display: flex;
+}
+
+h2 {
+    color: #2f69db;
+    font-weight: bold;
+}
+
+#promocoes h2 {
+    padding: 50px 0;
+    margin: 0 148px;
+    width: 500px;
+    display: inline-block;
+    border-bottom: 2px solid #2f69db;
+    padding-bottom: 5px;
+}
+
+#promocoes ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#promocoes ul li {
+    width: 350px ; 
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.descricao img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.descricao {
+    width: 50%;
+    padding: 10px;
+}
+
+.descricao del {
+    color: #999;
+}
+
+.descricao button {
+    background-color: rgb(58, 172, 56);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.descricao button:hover {
+    background-color: green;
+}
+
+#sobre h2 {
+    padding: 50px 0;
+    margin: 0 348px;
+    width: 700px;
+    display: inline-block;
+    border-bottom: 2px solid #2f69db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#sobre {
+    padding: 22px;
+    margin-bottom: 80px;
+}
+
+#sobre p {
+    width: 580px;
+}
+
+#sobre img {
+    width: 30%;
+    margin: 0 30px;
+    height: auto;
+    flex: 0 0 auto;
+}
+
+footer  {
+    background-color: #2f69db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#redes img {
+    margin: 0 30px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul li a {
+        margin: 0 10px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #promocoes h2,
+    #sobre h2 {
+        margin: 4px 20px;
+        width: 70%;
+    }
+
+    #promocoes ul li {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .descricao img {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre img {
+        width: 80%;
+        margin: 0;
+    }
+
+    #sobre p {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    #redes img {
+        margin: 0 10px;
+        width: 30px;
+    }
+}
